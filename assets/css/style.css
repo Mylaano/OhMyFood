@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 768px;
+    margin: auto;
+    background-color: #F7F7F7;
+}
+
+.title {
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    font-style: italic;
+}
+
+/******************************
+************ Reset ************
+******************************/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: 0;
+}
+
+/*********************************
+************* Mobile *************
+*********************************/
+
+/************* Header ************/
+
+header {
+    position: relative;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+/****** Section - Location ******/
+
+.section-location {
+    height: 50px;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-location > button {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    color: #353535;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/****** Section - Introduction ******/
+
+.section-introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 39px 0 57px;
+    text-align: center;
+}
+
+.section-introduction > h1 {
+    margin-bottom: 22px;
+    padding: 0 45px;
+}
+
+.section-introduction > p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.section-introduction > a {
+    margin-top: 27px;
+    padding: 13px 19px;
+    border-radius: 25px;
+    background: linear-gradient(355deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+/****** Section - Fonctionnement ******/
+
+.section-functionality {
+    padding: 48px 20px 68px;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    background-color: #FFFFFF;
+}
+
+.section-functionality > ol {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    list-style-position: inside;
+}
+
+.section-functionality > ol > li {
+    background-color: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    line-height: 72px;
+}
+
+.section-functionality > ol > li::marker::nth-child(1) {
+    content: "1";
+}
+
+.section-functionality > ol > li::marker {
+    display: flex;
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+/****** Section - Restaurant ******/
+
+.section-restaurant {
+    padding: 54px 20px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.menu-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+}
+
+.card-image {
+    object-fit: cover;
+    object-position: 0% 61%;
+    width: 100%;
+    height: calc(251px - 77px);
+    border-radius: 15px 15px 0 0;
+}
+
+.menu-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 25px 16px 13px;
+}
+
+.menu-info > i {
+    font-size: 21px;
+    margin-top: 7px;
+    color: #101010;
+}
+
+.menu-text {
+    color: #000000;
+}
+
+.menu-text > h3 {
+    font-size: 18px;
+}
+
+.menu-text > p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/************ Footer ************/
+
+footer {
+    background-color: #353535;
+    padding: 22px 25px 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+footer > img {
+    width: auto;
+    height: 18px;
+    filter: invert(100%) sepia(3%) saturate(16%) hue-rotate(154deg) brightness(104%) contrast(100%);
+}
+
+footer > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+footer > ul > li > a {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+footer > ul > li > a > i {
+    width: 11px;
+    height: 13px;
+    margin-right: 18px;
+}
+
+/*********************************
+************ Tablette ************
+*********************************/
+
+/**********************************
+************* Desktop *************
+**********************************/
+
