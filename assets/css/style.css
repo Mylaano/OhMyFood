@@ -114,26 +114,41 @@ header {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    list-style-position: inside;
+    list-style-type: none;
 }
 
 .section-functionality > ol > li {
     background-color: #F7F7F7;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
-    line-height: 72px;
-}
-
-.section-functionality > ol > li::marker::nth-child(1) {
-    content: "1";
-}
-
-.section-functionality > ol > li::marker {
+    height: 72px;
     display: flex;
-    background-color: #9356DC;
+    align-items: center;
+    gap: 23px;
+    margin-left: 12px;
+}
+
+.section-functionality > ol > li::before {
+    content: "1";
     border-radius: 50%;
     width: 24px;
     height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9356DC;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: -12px;
+}
+
+.section-functionality > ol > li:nth-child(2)::before {
+    content: "2";
+}
+
+.section-functionality > ol > li:nth-child(3)::before {
+    content: "3";
 }
 
 /****** Section - Restaurant ******/
@@ -228,7 +243,8 @@ footer > ul > li > a > i {
 ************ Tablette ************
 *********************************/
 
+
+
 /**********************************
 ************* Desktop *************
 **********************************/
-
