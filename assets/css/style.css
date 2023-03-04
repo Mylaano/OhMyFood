@@ -167,9 +167,25 @@ header {
 }
 
 .card {
+    position: relative;
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px; 
+}
+
+.menu-cards a:nth-child(1) .card::before,
+.menu-cards a:nth-child(2) .card::before {
+    content: "Nouveau";
+    position: absolute;
+    padding: 7px 9px;
+    background-color: #99E2D0;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 15%);
+    border-radius: 2px;
+    color: #008766;
+    font-size: 14px;
+    font-weight: 500;
+    right: 12px;
+    top: 13px;
 }
 
 .card-image {
