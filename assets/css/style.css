@@ -121,6 +121,11 @@ header {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     font-weight: 500;
     color: #FFFFFF;
+    transition: opacity 400ms;
+}
+
+.section-introduction > a:hover {
+    opacity: 0.8;
 }
 
 /****** Section - Fonctionnement ******/
