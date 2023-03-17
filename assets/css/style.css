@@ -144,11 +144,12 @@ header nav {
     font-weight: 500;
     color: #FFFFFF;
     cursor: pointer;
-    transition: opacity 400ms;
+    transition: all 400ms;
 }
 
 .btn:hover {
     opacity: 0.8;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /****** Section - Fonctionnement ******/
@@ -233,8 +234,8 @@ header nav {
     border-radius: 15px; 
 }
 
-.menu-cards a:nth-child(1) .card::before,
-.menu-cards a:nth-child(2) .card::before {
+.card:nth-child(1)::before,
+.card:nth-child(2)::before {
     content: "Nouveau";
     position: absolute;
     padding: 7px 9px;
@@ -378,6 +379,11 @@ header nav {
     justify-content: space-between;
     position: relative;
     padding: 0 18px 0 11px;
+    transition: box-shadow 400ms;
+}
+
+.restaurant-menu-details article ul li:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 .restaurant-menu-details article ul li:hover .btn-checked {
