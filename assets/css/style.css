@@ -117,6 +117,7 @@ header nav {
 /****** Section - Introduction ******/
 
 .section-introduction {
+    background-color: #f6f6f6;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,6 +174,7 @@ header nav {
     background-color: #F7F7F7;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
+    width: calc(100% - 12px);
     height: 72px;
     display: flex;
     align-items: center;
@@ -215,6 +217,7 @@ header nav {
 /****** Section - Restaurant ******/
 
 .section-restaurant {
+    background-color: #f6f6f6;
     padding: 54px 20px 64px;
     display: flex;
     flex-direction: column;
@@ -232,6 +235,7 @@ header nav {
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 15px; 
+    width: 100%;
 }
 
 .card:nth-child(1)::before,
@@ -432,7 +436,7 @@ header nav {
     justify-content: center;
     align-items: center;
     width: 0px;
-    height: 69px;
+    height: 68px;
     background-color: #99E2D0;
     color: #FFFFFF;
     border-radius: 0px 15px 15px 0px;
@@ -487,6 +491,73 @@ footer > ul > li > a > i {
 /**********************************
 ************* Desktop *************
 **********************************/
+
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1440px;
+    }
+
+    main {
+        background-color: #FFFFFF;
+    }
+
+    /* Index */
+    .section-functionality > ol {
+        flex-direction: row;
+    }
+
+    .menu-cards {
+        flex-direction: row;
+    }
+
+    /* Page de restauration */
+
+    .section-introduction > h1 {
+        font-size: 40px;
+    }
+    
+    .section-functionality {
+        padding: 48px 193px 68px;
+    }
+    
+    .section-restaurant {
+        padding: 54px 0 64px 193px;
+    }
+
+    .image-menu {
+        height: 423px;
+    }
+
+    .restaurant-menu-title {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .section-restaurant-menu {
+        margin: -55px 192px 0;
+    }
+
+    .restaurant-menu-details article {
+        margin: 0 211px;
+    }
+
+    .section-restaurant-menu .btn {
+        width: 186px;
+        height: 50px;
+        margin: 40px 0;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+        gap: 75px;
+        padding: 52px 115px 43px;
+    }
+
+    footer > ul {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
 
 /**********************************
 ************* Loader *************
