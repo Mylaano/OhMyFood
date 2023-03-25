@@ -7,7 +7,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    animation: body-overflow 3s;
     max-width: 767px;
     margin: auto;
     background-color: #F7F7F7;
@@ -47,6 +47,24 @@ button {
     }
     to {
         left: 0%;
+    }
+}
+
+@keyframes body-overflow {
+    from {
+        overflow: hidden;
+    }
+    to {
+        overflow: auto;
+    }
+}
+
+@keyframes loader-hidden {
+    from {
+        visibility: visible;
+    }
+    to {
+        visibility: hidden;
     }
 }
 
@@ -582,7 +600,7 @@ footer > ul > li > a > i {
 ************* Loader *************
 **********************************/
 
-/*@keyframes zoom {
+@keyframes zoom {
     0% {
         transform: scale3d(1.0, 1.0, 1.0);
     }
@@ -609,6 +627,7 @@ footer > ul > li > a > i {
     align-items: center;
     gap: 25px;
     z-index: 1;
+    animation: loader-hidden 3s;
 }
 
 .loading-logo {
@@ -648,4 +667,4 @@ footer > ul > li > a > i {
 
 .loading-dot li:nth-child(5) {
     animation-delay: 1.8s;
-}*/
+}
