@@ -7,7 +7,7 @@
 }
 
 body {
-    animation: body-overflow 3s;
+    animation: body-overflow 7s;
     max-width: 767px;
     margin: auto;
     background-color: #F7F7F7;
@@ -61,9 +61,10 @@ button {
 
 @keyframes loader-hidden {
     from {
-        visibility: visible;
+        opacity: 1;
     }
     to {
+        opacity: 0;
         visibility: hidden;
     }
 }
@@ -616,18 +617,17 @@ footer > ul > li > a > i {
 .loading-contenair {
     background: linear-gradient(130deg, #9356DC, #FF79DA);
     height: 100vh;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 25px;
     z-index: 1;
-    animation: loader-hidden 3s;
+    animation: loader-hidden 3s ease-in-out forwards;
 }
 
 .loading-logo {
